@@ -2,7 +2,7 @@
 
  📌 Overview
 
-The Personal Health & Emotion-Aware Virtual Assistant (PHEV) is an AI-powered healthcare support system designed to monitor patient health, suggest treatments, and assist doctors in making better decisions. It provides automatic medicine alarms, real-time vital sign visualization, AI-driven recommendations, diet planning, and doctor alerts** — all integrated into a Tkinter-based GUI.
+The Personal Health & Emotion-Aware Virtual Assistant (PHEV) is an AI-powered healthcare support system designed to monitor patient health, suggest treatments, and assist doctors in making better decisions. It provides automatic medicine alarms, real-time vital sign visualization, AI-driven recommendations, diet planning, and doctor alerts — all integrated into a Tkinter-based GUI.
 
 
 ✨ Features
