@@ -1,0 +1,105 @@
+
+
+ 🏥 Personal Health & Emotion-Aware Virtual Assistant (PHEV)
+
+ 📌 Overview
+
+The Personal Health & Emotion-Aware Virtual Assistant (PHEV) is an AI-powered healthcare support system designed to monitor patient health, suggest treatments, and assist doctors in making better decisions. It provides automatic medicine alarms, real-time vital sign visualization, AI-driven recommendations, diet planning, and doctor alerts — all integrated into a Tkinter-based GUI.
+
+
+ ✨ Features
+
+* 📊 Vital Signs Dashboard – Real-time charts for **blood pressure, heart rate, and pulse.
+* 🤖 AI Recommendation Engine – Suggests treatments, alternative medicines (by generic), and diet plans.
+* ⏰ Medicine Alarm System – Automatically sets reminders for patient medicine schedules.
+* 👨‍⚕️ Doctor Alerts – Notifies doctors in emergency/special cases.
+* 💊 Alternative Medicine Suggestions – Recommends substitute drugs with the same generic.
+* 🥗 Dietary Suggestions – Suggests food plans for recovery and chronic conditions.
+* 🎨 Modern GUI – Tkinter interface with organized tabs and panels.
+
+
+
+  UML Prototype
+
+High-Level System Design
+`mermaid
+flowchart TD
+    User[Patient Input] --> GUI[GUI Panel]
+    GUI --> Vitals[Vital Signs Dashboard]
+    GUI --> AI[AI Recommendation Engine]
+    GUI --> Alarm[Medicine Alarm System]
+    Alarm --> Doctor[Doctor Alerts]
+    AI --> Suggest[Diet & Medicine Suggestions]
+
+
+ 🚀 Tech Stack
+
+* Programming Language: Python (3.10+)
+* Libraries Used:
+
+  * tkinter → GUI
+  * matplotlib → Vital sign graphs
+  * threading` → Alarm & notifications
+  * datetime → Schedule handling
+  * random → AI recommendation simulation
+
+
+
+## 📂 Project Structure
+
+
+phev/
+│── main.py                 # Entry point
+│── gui/
+│   └── main_gui.py         # Tkinter GUI with AI + Dashboard + Alarms
+│── core/
+│   ├── ai_engine.py        # AI Recommendation Engine
+│   ├── doctor_alert.py     # Doctor Alert System
+│   └── medicine_alarm.py   # Automated Medicine Alarm
+│── data/
+│   └── patient_data.json   # Stores patient information
+│── docs/
+│   └──PHEV Summary.py      # IEEE standard paper for the project
+
+
+ ⚙️ Installation
+
+1. Clone the repo:
+
+  bash
+   git clone https://github.com/yourusername/phev-assistant.git
+   cd phev-assistant
+   
+2. Install required libraries:
+
+   bash
+   pip install matplotlib
+
+3. Run the system:
+
+    bash
+   python main.py
+   
+
+ 📌 Usage
+
+1. Launch the GUI.
+2. Enter **patient details** (name, age, symptoms).
+3. Monitor **real-time vitals** on the dashboard.
+4. The **AI engine** will suggest treatments, medicines, and diets.
+5. The **medicine alarm system** will automatically notify at scheduled times.
+6. Doctors receive **alerts** for emergencies.
+
+
+
+
+👥 Contributors
+
+* Ahadul Haque Shovo – Lead Developer
+* Maysha Jahan – Project Lead
+
+
+
+ 📜 License
+
+This project is licensed under the MIT License.
