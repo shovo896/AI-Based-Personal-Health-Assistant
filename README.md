@@ -8,6 +8,7 @@ The Personal Health & Emotion-Aware Virtual Assistant (PHEV) is an AI-powered he
 ✨ Features
 
  📊  Vital Signs Dashboard  – Real-time charts for blood pressure, heart rate, and pulse.
+ 
  🤖 AI Recommendation Engine – Suggests treatments, alternative medicines (by generic), and diet plans.
  ⏰ Medicine Alarm System – Automatically sets reminders for patient medicine schedules.
  👨‍⚕️ Doctor Alerts – Notifies doctors in emergency/special cases.
