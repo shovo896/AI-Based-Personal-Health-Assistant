@@ -49,7 +49,7 @@ flowchart TD
 phev/
 │── main.py                 # Entry point
 │── gui/
-│   └── main_gui.py         # Tkinter GUI with AI + Dashboard + Alarms
+│   └──  main_gui.py         # Tkinter GUI with AI + Dashboard + Alarms
 │── core/
 │   ├── ai_engine.py        # AI Recommendation Engine
 │   ├── doctor_alert.py     # Doctor Alert System
