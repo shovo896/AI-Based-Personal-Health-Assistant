@@ -21,7 +21,7 @@ if user_input:
 # Display chat history
 for speaker, text in st.session_state.history:
     if speaker == "You":
-        st.markdown(f"**You:** {text}")
+        st.markdown(f"You: {text}")
     else:
-        st.markdown(f"**Assistant:** {text}")
+        st.markdown(f"Assistant: {text}")
 
