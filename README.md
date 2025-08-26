@@ -1,28 +1,52 @@
- 🏥 Personal Health & Emotion-Aware Virtual Assistant (PHEV)
+# 🏥 Personal Health & Emotion-Aware Virtual Assistant (PHEV)
 
- 📌 Overview
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)
+[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-green?logo=python)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Contributors](https://img.shields.io/badge/Contributors-2-orange)]()
 
-The Personal Health & Emotion-Aware Virtual Assistant (PHEV) is an AI-powered healthcare support system designed to monitor patient health, suggest treatments, and assist doctors in making better decisions. It provides automatic medicine alarms, real-time vital sign visualization, AI-driven recommendations, diet planning, and doctor alerts — all integrated into a Tkinter-based GUI.
+---
 
+## 📌 Overview
 
-✨ Features
+The **Personal Health & Emotion-Aware Virtual Assistant (PHEV)** is an **AI-powered healthcare support system** designed to:
 
- 📊  Vital Signs Dashboard  – Real-time charts for blood pressure, heart rate, and pulse.
- 
- 🤖 AI Recommendation Engine – Suggests treatments, alternative medicines (by generic), and diet plans.
- ⏰ Medicine Alarm System – Automatically sets reminders for patient medicine schedules.
- 👨‍⚕️ Doctor Alerts – Notifies doctors in emergency/special cases.
- 💊 Alternative Medicine Suggestions – Recommends substitute drugs with the same generic.
- 🥗 Dietary Suggestions – Suggests food plans for recovery and chronic conditions.
-  🎨 Modern GUI – Tkinter interface with organized tabs and panels.
+✔️ Monitor patient health in real time
+✔️ Suggest treatments & diet plans
+✔️ Provide medicine alarms & doctor alerts
+✔️ Assist doctors in better decision-making
 
+👉 Fully interactive **Tkinter-based GUI** for patients and doctors.
 
+---
 
- UML Prototype
+## ✨ Features
 
- High-Level System Design
+* 📊 **Vital Signs Dashboard** – Real-time charts for blood pressure, heart rate, and pulse
+* 🤖 **AI Recommendation Engine** – Treatment, diet & medicine suggestions
+* ⏰ **Medicine Alarm System** – Automatic reminders for medicine intake
+* 👨‍⚕️ **Doctor Alerts** – Emergency alerts to doctors
+* 💊 **Alternative Medicine Suggestions** – Substitutes with same generic
+* 🥗 **Dietary Suggestions** – Food plans for recovery/chronic conditions
+* 🎨 **Modern GUI** – Clean, tabbed interface
 
- mermaid
+---
+
+## 🎥 Demo Previews
+
+📊 **Vital Signs Dashboard** <img src="https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif" width="600"/>
+
+🤖 **AI Recommendation Engine** <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="600"/>
+
+⏰ **Medicine Alarm System** <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="600"/>
+
+👨‍⚕️ **Doctor Alert Notification** <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" width="600"/>
+
+---
+
+## 🖼️ UML Prototype
+
+```mermaid
 flowchart TD
     User[Patient Input] --> GUI[GUI Panel]
     GUI --> Vitals[Vital Signs Dashboard]
@@ -30,73 +54,84 @@ flowchart TD
     GUI --> Alarm[Medicine Alarm System]
     Alarm --> Doctor[Doctor Alerts]
     AI --> Suggest[Diet & Medicine Suggestions]
-🚀 Tech Stack
+```
 
-* Programming Language: Python (3.10+)
-* Libraries Used:
+---
 
-  * tkinter → GUI
-  * matplotlib → Vital sign graphs
-  * threading → Alarm & notifications
-  * datetime → Schedule handling
-  * random → AI recommendation simulation
+## 🚀 Tech Stack
 
+**Language:** Python (3.10+)
+**Libraries Used:**
 
+* `tkinter` → GUI
+* `matplotlib` → Charts
+* `threading` → Alarm & notifications
+* `datetime` → Scheduling
+* `random` → AI recommendation simulation
 
- 📂 Project Structure
+---
 
+## 📂 Project Structure
 
+<details>
+<summary>Click to expand</summary>
+
+```
 phev/
 │── main.py                 # Entry point
 │── gui/
-│   └──  main_gui.py         # Tkinter GUI with AI + Dashboard + Alarms
+│   └── main_gui.py         # Tkinter GUI
 │── core/
 │   ├── ai_engine.py        # AI Recommendation Engine
 │   ├── doctor_alert.py     # Doctor Alert System
 │   └── medicine_alarm.py   # Automated Medicine Alarm
 │── data/
-│   └── patient_data.json   # Stores patient information
+│   └── patient_data.json   # Patient info
 │── docs/
-│   └── IEEE_Paper.pdf      # IEEE standard paper for the project
+│   └── IEEE_Paper.pdf      # Project paper
+```
 
+</details>
 
+---
 
- ⚙️ Installation
+## ⚙️ Installation
 
-1. Clone the repo:
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/phev-assistant.git
+cd phev-assistant
 
-   bash
-   git clone https://github.com/yourusername/phev-assistant.git
-   cd phev-assistant
-  
-2. Install required libraries:
+# Install dependencies
+pip install matplotlib
 
-    bash
-   pip install matplotlib
-   
-3. Run the system:
+# Run the system
+python main.py
+```
 
-   bash
-   python main.py
-  
+---
 
+## 📌 Usage
 
+1. Launch the GUI
+2. Enter patient details (name, age, symptoms)
+3. Monitor **real-time vitals**
+4. Get **AI treatment & diet suggestions**
+5. Receive **medicine alarms** automatically
+6. Doctors are alerted in emergencies
 
- 📌 Usage
+---
 
-1. Launch the GUI.
-2. Enter patient details (name, age, symptoms).
-3. Monitor real-time vitals on the dashboard.
-4. The AI engine will suggest treatments, medicines, and diets.
-5. The medicine alarm system will automatically notify at scheduled times.
-6. Doctors receive alerts for emergencies.
- 👥 Contributors
+## 👥 Contributors
 
-* Ahadul Haque Shovo – Lead Developer
-* Maysha Jahan – Project Lead
+* **Ahadul Haque Shovo** – Lead Developer
+* **Maysha Jahan** – Project Lead
 
- 📜 License
+---
 
-This project is licensed under the MIT License.
+## 📜 License
 
+This project is licensed under the **MIT License**.
+
+---
 
