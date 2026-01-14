@@ -28,6 +28,7 @@ The **Personal Health & Emotion-Aware Virtual Assistant (PHEV)** is an **AI-powe
 * 👨‍⚕️ **Doctor Alerts** – Emergency alerts to doctors
 * 💊 **Alternative Medicine Suggestions** – Substitutes with same generic
 * 🥗 **Dietary Suggestions** – Food plans for recovery/chronic conditions
+* 📅 **Weekly Health Report** – Log daily entries and generate summary charts
 * 🎨 **Modern GUI** – Clean, tabbed interface
 
 ---
@@ -134,4 +135,3 @@ python main.py
 This project is licensed under the **MIT License**.
 
 ---
-
