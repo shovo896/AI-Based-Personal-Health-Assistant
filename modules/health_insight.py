@@ -7,7 +7,16 @@ class HealthInsightEngine:
             {"sleep_hours": 5, "heart_rate": 85, "steps": 2500},
         ]
 
+    def add_entry(self, sleep_hours, heart_rate, steps):
+        if sleep_hours <= 0 or heart_rate <= 0 or steps < 0:
+            raise ValueError("Sleep hours and heart rate must be positive; steps cannot be negative.")
+        self.health_data.append(
+            {"sleep_hours": float(sleep_hours), "heart_rate": int(heart_rate), "steps": int(steps)}
+        )
+
     def analyze_health(self):
+        if not self.health_data:
+            return {"sleep_avg": 0, "heart_rate_avg": 0, "activity_avg": 0}
         sleep_avg = sum(d["sleep_hours"] for d in self.health_data) / len(self.health_data)
         heart_avg = sum(d["heart_rate"] for d in self.health_data) / len(self.health_data)
         steps_avg = sum(d["steps"] for d in self.health_data) / len(self.health_data)
